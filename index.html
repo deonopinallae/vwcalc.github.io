@@ -70,7 +70,6 @@
                 const result = (pixels.value / viewport.value * 100).toFixed(2)
                 resultInp.innerHTML = `clamp(${Math.round(pixels.value / 1.5)}px, ${result}vw, ${pixels.value}px)`
                 navigator.clipboard.writeText(resultInp.innerHTML)
-                viewport.value = ''
                 pixels.value = ''
             }
         }
